@@ -1,0 +1,11 @@
+yolo_model:
+
+  config_file:
+    name: yolo-obj.cfg
+  weight_file:
+    name: yolo-obj_40000.weights
+  threshold:
+    value: 0.5
+  detection_classes:
+    names:
+      - diver

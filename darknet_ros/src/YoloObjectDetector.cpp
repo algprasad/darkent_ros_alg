@@ -158,6 +158,7 @@ void YoloObjectDetector::init() {
 
 void YoloObjectDetector::cameraCallback(const sensor_msgs::ImageConstPtr& msg) {
   ROS_DEBUG("[YoloObjectDetector] USB image received.");
+  ROS_INFO("camera callback called!");
 
   cv_bridge::CvImagePtr cam_image;
 
@@ -432,7 +433,7 @@ void YoloObjectDetector::setupNetwork(char* cfgfile, char* weightfile, char* dat
 void YoloObjectDetector::yolo() {
   const auto wait_duration = std::chrono::milliseconds(2000);
   while (!getImageStatus()) {
-    printf("Waiting for image.\n");
+    printf("Waiting for image. Pliz snd image.\n");
     if (!isNodeRunning()) {
       return;
     }

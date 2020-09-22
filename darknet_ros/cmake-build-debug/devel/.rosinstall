@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/alg/darknet_ros/src/darknet_ros/darknet_ros/cmake-build-debug/devel/setup.sh
