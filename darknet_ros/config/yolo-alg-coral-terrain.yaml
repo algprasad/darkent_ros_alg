@@ -1,0 +1,11 @@
+yolo_model:
+
+  config_file:
+    name: yolov2-coral-terrain.cfg
+  weight_file:
+    name: yolov2-coral-terrain.weights
+  threshold:
+    value: 0.75
+  detection_classes:
+    names:
+      - diver
